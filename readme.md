@@ -1,15 +1,31 @@
 # Airfoil Brain
-Airfoil Brain is data-driven framework for rapid prediction of C81 tables of arbitrary airfoil geometries. The framework consists of two core NNs: the airfoil generation network (AGN), which parameterizes a large airfoil design space, and the performance prediction network (PPN), which provides scalable and reliable predictions.
 
-# Version
-python 3.8.7
-pytorch 1.13.0+cu117
+**Airfoil Brain** is a data-driven framework for rapid prediction of airfoil lookup tables for arbitrary airfoil geometries.  
+The framework consists of two core neural networks:
 
-# Installation
+- **Airfoil Generation Network (AGN)**, which parameterizes a large and flexible airfoil design space  
+- **Performance Prediction Network (PPN)**, which provides scalable and reliable aerodynamic predictions
+
+
+
+## Environment
+
+- Python 3.8.7  
+- PyTorch 1.13.0 (CUDA 11.7)
+
+
+
+## Installation
+
+```bash
 pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu117
+```
 
-# Citation
+## Citation
+
 If you use this code in your research, please cite the following publications:
+
+```bibtex
 
 @article{kang2025intuitive,
   title   = {Intuitive and feasible geometric representation of airfoil using variational autoencoder},
@@ -29,3 +45,4 @@ If you use this code in your research, please cite the following publications:
   year    = {2025},
   note    = {to appear}
 }
+```
